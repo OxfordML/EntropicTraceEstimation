@@ -1,0 +1,14 @@
+- Hyperparameter optimisation for a GMRF which repeatedly involves computation of log-likelihood terms
+- For given 'Red Sea Data', carries out cholesky on:
+	21921*21921 matrix, and
+	126000*126000 (this should be quite sparse however)
+
+	computations are only taking around 4000ms each - is it enoguh to show speedup?
+
+- Perhaps we can show some form of speed-up here? (while preserving accuracy) 
+
+Files of interest:
+
+	'analyzedata.m' for running comparison of methods
+	--> we can focus on the plain method with the 'nugget' - it seems to take long enough for our method to show a speedup. I've commented out the others for now. I think it's also possible to get a plot with interpolated values out of it.
+	--> cholesky operations being carried out in 'loglikfast.m' - we can probably swap in our code here

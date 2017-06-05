@@ -1,0 +1,11 @@
+- kMeans clustering carried out using Jensen-Bregman LogDet divergence metric
+
+File of interest:
+- 'test_JLD_NN.m' --> Training matrices are computed and clustered using kmeans. A confusion matrix is generated at the end.
+	To change size of matrix: increase parameter 'nc'; Note that the the parameer 'd' must always remain greater however.
+
+- Evaluation of metric in 'JBLD.m'; should be straightforward to simply slot in our code.
+
+
+
+For the time being, only a measure of speed-up can be obtained. We could technically also show that the classification precision remains unchanged.

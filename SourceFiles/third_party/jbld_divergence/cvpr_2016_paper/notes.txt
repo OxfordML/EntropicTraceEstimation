@@ -1,0 +1,20 @@
+- Kinect dataset
+ 228 * 228 matrices <-- too small
+
+- MSRAction3D
+Can be boosted up to:
+	684*684 <-- Is there still potential for speedup?
+
+Files of interest:
+
+	'analyzedata.m' for running comparison of methods
+	--> we can focus on the plain method with the 'nugget' - it seems to take long enough for our method to show a speedup. I've commented out the others for now. I think it's also possible to get a plot with interpolated values out of it.
+	--> cholesky operations being carried out in 'loglikfast.m' - we can probably swap in our code here
+
+ 	'logdet.m'
+ 	--> Cholesky is being carried out here
+ 	'JBLD.m'
+ 	--> Implementation of divergence metric formula
+
+ 	To execute:
+ 	skeletal_action_classification(3) -->  set 'opt.H_rows = 5' to 12 for largest matrix
