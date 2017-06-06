@@ -6,6 +6,6 @@ Currently the code is only the main parts used on the paper. However, over the c
 
 The UFL datasets can be downloaded from [here](https://www.cise.ufl.edu/research/sparse/matrices/).
 
-In order to recreate the GMRF experiments the code from the paper "Efficient Computation of Gaussian Likelihoods for Stationary Markov Random Field Models", Guinness and Ipsen 2015.
+In order to recreate the GMRF experiments we modified the third party code from the paper "Efficient Computation of Gaussian Likelihoods for Stationary Markov Random Field Models", Guinness and Ipsen 2015. 
 
 For any queries related to the code please do not hesitate to contact the authors.
